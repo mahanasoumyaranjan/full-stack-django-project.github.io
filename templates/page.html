@@ -1,0 +1,62 @@
+
+{% load static %}
+<html>
+    <head>
+        <title>
+            Choose One
+        </title>
+        <link rel="stylesheet" href="{% static '/agriculture/page.css' %}">
+    </head>
+    <body>
+        <div class="wel">
+            {% if messages %}
+                {% for message in messages %}
+                    <h1><b> {{ message }}</b></h1>
+                {% endfor %}
+            {% endif %}
+        </div>
+        <hr>
+        <br>
+        <div align="center" class="head">
+            <h2><b>CHOOSE ONE👇</b></h2>
+        </div>
+        <div class="div">
+            <a href=""><img src="{% static '/agriculture/images/soil1.gif' %}" alt="grass" height="50%" width="" /></a>
+            <p align="center"><b><u>SOIL</u></b><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, eligendi.</p>
+            <a href=""><button type="button" class="btn1">CLICK HERE👇</button></a>
+        </div>
+        <br>
+        <div class="div">
+            <a href=""><img src="{% static '/agriculture/images/clouds-raining.gif' %}" alt="rain" height="50%" width="" /></a>
+            <p align="center"><b><u>RAIN</u></b><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, eligendi.</p>
+            <a href=""><button type="button" class="btn1">CLICK HERE👇</button></a>
+        </div>
+        <br>
+        <div class="div">
+            <a href=""><img src="{% static '/agriculture/images/manage.gif' %}" alt="manage" height="50%" width="" /></a>
+            <p align="center"><b><u>MANAGE</u></b><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, eligendi.</p>
+            <a href=""><button type="button" class="btn1">CLICK HERE👇</button></a>
+        </div>
+        <br>
+        <div class="div">
+            <a href=""><img src="{% static '/agriculture/images/time.gif' %}" alt="time" height="50%" width="" /></a>
+            <p align="center"><b><u>TIME PERIOD</u></b><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, eligendi.</p>
+            <a href=""><button type="button" class="btn1">CLICK HERE👇</button></a>
+        </div>
+        <br>
+        <!-- <div class="div">
+            <a href=""><img src="crop1.gif" alt="grass" height="50%" width="" /></a>
+            <p align="center"><b><u>CROPS</u></b><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, eligendi.</p>
+            <a href=""><button type="button" class="btn1">CLICK HERE👇</button></a>
+        </div>
+        <br> -->
+        <div class="div">
+            <a href=""><img src="{% static '/agriculture/images/crop.gif' %}" alt="grass" height="50%" width="" /></a>
+            <p align="center"><b><u>CROPS</u></b><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, eligendi.</p>
+            <a href=""><button type="button" class="btn1">CLICK HERE👇</button></a>
+        </div>
+        <div class="btn">
+            <a href="{% url 'logout' %}"><button type="button" class="btn2"><img src="{% static '/agriculture/images/logout2.gif' %}"></button></a>
+        </div>
+    </body>
+</html>

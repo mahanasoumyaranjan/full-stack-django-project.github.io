@@ -1,0 +1,45 @@
+{% load static %}
+<html>
+    <head>
+        <title>Feedback | Agriculture</title>
+        <link rel="stylesheet" href="{% static '/agriculture/feedback.css' %}">
+    </head>
+    <body>
+        <div class="container">
+            <div class="text">YOUR FEEDBACK HERE👇🏻</div>
+            <form action="#" method="POST">
+                {% csrf_token %}
+                <div class="form-row">
+                    <div class="input-data">                        
+                        <input type="text" id="name" name="name" required>
+                        <div class="underline"></div>
+                        <label>Name</label>
+                    </div>
+                    <div class="input-data">                        
+                        <input type="email" id="mail" name="email" required>
+                        <div class="underline"></div>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-data">                    
+                        <input type="number" id="contact" name="contact" required maxlength="10">
+                        <div class="underline"></div>
+                        <label>Contact</label>
+                    </div>
+                </div>
+                <div class="form-row textarea">
+                    <div class="input-data">
+                        <textarea cols="30" rows="10" required name="feed"></textarea>
+                        <div class="underline"></div>
+                        <label>Feedback</label>
+                    </div>
+                </div>
+                <div class="form-row submit-btn">
+                    <div class="input-data">
+                        <div class="inner"></div>
+                        <!-- <button type="submit">SUBMIT</button> -->
+                        <input type="submit" value="SUBMIT">
+                    </div>
+                </div>
+            </form>
+    </body>
+</html>

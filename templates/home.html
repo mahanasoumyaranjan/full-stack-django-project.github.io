@@ -1,0 +1,92 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture | Home</title>
+    <link rel="stylesheet" href="{% static '/agriculture/reset.css' %}">
+    <link rel="stylesheet" href="{% static '/agriculture/style.css' %}">
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <header id="header">
+        <div class="wrapper">
+            <h1>Agriculture<span class="color">.</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'login' %}">Log In</a></li>
+                    <li><a href="{% url 'registration' %}">Sign Up</a></li>
+                    <li><a href="{% url 'feedback' %}">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="hero-image">
+        <div class="wrapper">
+            <img src="{% static '/agriculture/images/hero.jpg' %}" alt="">
+            <h2><strong>A Helping Hand</strong><br/>
+            for farmers of our society.</h2>
+            <a href="{% url 'about' %}" class="button-1">More Info..</a>
+        </div>
+    </div>
+    <div id="features">
+        <div class="wrapper">
+            <ul>
+                <li class="feature-1">
+                    <img src="{% static '/agriculture/images/soil.gif' %}" alt="">
+                    <h4>Soil</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis turpis ac libero interdum, id fringilla purus feugiat. Etiam malesuada mattis nibh at bibendum.</p>
+                    <button class="f1"><a href="{% url 'soil_more' %}">Read More..</a></button>
+                </li>
+                <li class="feature-2">
+                    <img src="{% static '/agriculture/images/fertilizers.gif' %}" alt="">
+                    <h4>Fertilizers</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis turpis ac libero interdum, id fringilla purus feugiat. Etiam malesuada mattis nibh at bibendum.</p>
+                    <button class="f2"><a href="{% url 'fert_more' %}">Read More..</a></button>
+                </li>
+                <li class="feature-3">
+                    <img src="{% static '/agriculture/images/plant.gif' %}" alt="">
+                    <h4>Plantation</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis turpis ac libero interdum, id fringilla purus feugiat. Etiam malesuada mattis nibh at bibendum.</p>
+                    <button class="f3"><a href="{% url 'plant_more' %}">Read More..</a></button>
+                </li>
+                <li class="feature-4">
+                    <img src="{% static '/agriculture/images/rainy.gif' %}" alt="">
+                    <h4>Rain</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis turpis ac libero interdum, id fringilla purus feugiat. Etiam malesuada mattis nibh at bibendum.</p>
+                    <button class="f4"><a href="{% url 'rain_more' %}">Read More..</a></button>
+                </li>
+                <li class="feature-5">
+                    <img src="{% static '/agriculture/images/box.gif' %}" alt="">
+                    <h4>Management</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis turpis ac libero interdum, id fringilla purus feugiat. Etiam malesuada mattis nibh at bibendum.</p>
+                    <button class="f5"><a href="{% url 'manage_more' %}">Read More..</a></button>
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="wrapper">
+            
+            <div id="footer-links">
+                <ul>
+                    <li><a href="{% url 'about' %}">About Us</a></li>
+                    <li><a href="mailto:bibhabsahoobidur@gmail.com">Contacts</a></li>
+                    <li><a href="{% url 'credit' %}">Credits</a></li>
+                    <li><a href="{% url 'feedback' %}">Feedback</a></li>
+                </ul>
+            </div>
+            <div id="footer-info">
+                <p>Copyright 2022 Agri Help. All rights reserved.</p>
+                <p><a href="{% url 'terms&cond' %}">Terms of Service</a> I <a href="{% url 'privacy&policy' %}">Privacy</a></p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </footer>
+</body>
+</html>

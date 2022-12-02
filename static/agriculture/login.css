@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background: url(./images/loginBackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "lato", sans-serif;
+}
+h2{
+    font-size: 6rem;
+    font-weight: 400;
+    color: red;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+} 
+.loginbox{
+    box-shadow: 2px 2px #63D471;
+    border-radius: 10px;
+    padding: 3px;
+    width: max-content;
+    height: max-content;
+    background-color: whitesmoke;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.l{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+h1{
+    color: black;
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px; 
+}
+
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="text"], input[type="password"]{
+    margin: 16px 0;
+    box-shadow: 2px 2px 2px white, 0px 0px 0px white, 0px 0px 0px white;
+    border-radius: 4px;
+    position: relative;
+    padding: 4px;
+    background: transparent;
+    background-color: lightcyan;
+    outline: none;
+     height: 40px;
+     color: grey;   
+     font-size: 16px;
+}
+
+.loginbox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: greenyellow;
+    color: black;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.loginbox input[type="submit"]:hover{
+    cursor: pointer;
+    background: #63D471;
+    color: #000;
+}
+
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bolder;
+     line-height: 20px;
+     color:#50394c;
+}
+
+.loginbox a:hover{
+    color: #63D471;
+}
+
+p{
+    color: #3e4444;
+}
+
